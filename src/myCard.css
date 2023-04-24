@@ -1,0 +1,273 @@
+body{
+  min-width: 600px;
+}
+
+.wrapper {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.wrapper.hidden {
+  opacity: 0;
+}
+
+.balloon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    margin: 20px;
+    width: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .balloon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transform: translateY(-50%);
+  }
+
+  .triangle {
+    margin-left: 0px;
+    margin-top: 100px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    animation: blink 1s infinite ;
+    transform: rotate(90deg);
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+.wrapper {
+    position: inherit;
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    /* place-items: center; */
+  }
+  
+  .typing-demo {
+    width: 40ch;
+    animation: typing 1.3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 설정 */
+    -webkit-font-smoothing: antialiased; /* 웹킷 브라우저에서 폰트 부드럽게 표시 */
+    -moz-osx-font-smoothing: grayscale; /* 모질라 브라우저(macOS)에서 폰트 부드럽게 표시 */
+    font-weight: normal; /* 폰트 가중치(normal, bold 등) 설정 */
+    font-size: 26px; /* 폰트 크기 설정 */
+    line-height: 1.4; /* 줄 간격(line-height) 설정 */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+.card {
+    /* margin-top: 15%; */
+    margin: 150px 5% 0;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #FBFDFA;
+    height: 500px;
+    
+  }
+
+.card2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  box-shadow: 0 0 0 4px #618095;
+  }
+
+.aboutSkills {
+  margin-top: 150px;
+  height: 900px;
+  border: 4px solid #618095;
+  border-radius: 10px;
+  color: #FBFDFA;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  /* box-shadow: 0 0 0 4px #618095; */
+}
+.aboutSkillsTag {
+  position: absolute;
+  background-color: black;
+  margin-top: 100px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: 4px solid #FBFDFA;
+  color: #FBFDFA;
+  font-size: 45px;
+  font-family: Trebuchet;
+  transform: rotate(-7deg);
+}
+
+.myPhoto { 
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  max-width: 200px;
+  margin: 30px 30px 0;
+}
+
+  .word {
+    position: relative;
+    animation: mymove 5s infinite;
+    color: #465E6C;
+  }
+
+  .react{
+    /* padding: 0px; */
+    margin-left: 20px;
+    margin-top: 210px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #FBFDFA;
+    color: #FBFDFA;
+    background-color: black;
+  }
+
+  .tag{
+    bottom: 115px;
+    right: 370px;
+    width: 20px;
+    height: 20px;
+    transform: translate(50%, 50%);
+        /* padding: 0px; */
+        margin-left: 400px;
+        margin-top: 56px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 125px;
+        height: 50px;
+        border-radius: 10px;
+        border: 2px solid #FBFDFA;
+        color: #FBFDFA;
+        background-color: black;
+  }
+  
+  .box2{
+    /* margin: 40px 40px; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #FBFDFA;
+  }
+
+ .box3{
+    position: relative;
+    padding: 10px;
+    border: 2px solid #FBFDFA;
+    height: 100px;
+    width: 400px;
+    margin-top: 95px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 설정 */
+    -webkit-font-smoothing: antialiased; /* 웹킷 브라우저에서 폰트 부드럽게 표시 */
+    -moz-osx-font-smoothing: grayscale; /* 모질라 브라우저(macOS)에서 폰트 부드럽게 표시 */
+    font-weight: normal; /* 폰트 가중치(normal, bold 등) 설정 */
+    font-size: 16px; /* 폰트 크기 설정 */
+    line-height: 1.4; /* 줄 간격(line-height) 설정 */
+  }
+
+  .box3::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes mymove {
+    /* 0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;} */
+  }
+
+  /* .grassland {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(to bottom, #5cb85c, #2e8b57);
+  }
+  
+  .grassland:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-repeat: repeat-x;
+  }
+  
+  .grassland:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-repeat: repeat-x;
+    transform: scaleY(-1);
+  }
+  
+  .pond {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(to bottom, #add8e6, #5f9ea0);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  }
+   */
