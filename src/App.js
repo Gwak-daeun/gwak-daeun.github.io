@@ -1,30 +1,41 @@
 
-import { Row } from 'antd';
 import './App.css';
 import Astronaut from './components/astronaut';
-import Contents from './components/contents';
 import MyCard from './components/myCard';
 import './style.css';
+import { useEffect, useState } from 'react';
 
 function App() {
 
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+	  const handleScroll = () => {
+		console.log(window.scrollY);
+		console.log(scrolled);
+		if (window.scrollY > 2400) {
+		  setScrolled(true);
+		} else {
+		  setScrolled(false);
+		}
+	  };
+	  window.addEventListener('scroll', handleScroll);
+  
+	  return () => {
+		window.removeEventListener('scroll', handleScroll);
+	  };
+	}, []);
 
     return(
-        <div id='whole'>
+		<div className={ `app ${scrolled ? 'scrolled' : ''}`}>
 
-		{/* <div className="wrapper">
-			<div className="typing-demo">
-			안녕하세요. 프론트엔드 개발자 곽다은 입니다.
-			</div>
-	</div> */}
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+
 		<MyCard />
 		<Astronaut />
-		<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
        {/* <Contents /> */}
-
-
    </div>
   );
 }

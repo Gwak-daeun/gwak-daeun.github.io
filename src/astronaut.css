@@ -1,14 +1,21 @@
 
 
 .astronaut{
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 280px;
     position: fixed;
     z-index: 100;
     top: 0%;
-    left: 70%;
-    margin-right: 30%;
+    left: 80%;
+    /* margin-right: 30%; */
     animation: astronaut 60s linear infinite;
+    transition: all 0.5s ease;
+  }
+
+  .astronaut .hide{
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 
   @keyframes astronaut{

@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../astronaut.css'
 
 const Astronaut = () => {
 
+    const [isHidden, setIsHidden] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.pageYOffset > 50) {
+          setIsHidden(true);
+        } else {
+          setIsHidden(false);
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+
     return(
         <>
-            <div className="astronaut" data-js="astro">
+            <div className={!isHidden ? `astronaut` : `astronaut hide`} data-js="astro">
                 
                 <div className="head"></div>
                 <div className="arm arm-left"></div>

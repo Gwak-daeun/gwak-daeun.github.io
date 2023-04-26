@@ -1,6 +1,4 @@
-body{
-	background:#000000;
-}
+
 
 #stars {
   z-index: 1;
@@ -61,7 +59,7 @@ body{
 
 @keyframes animStar {
   from {
-    transform: translateY(-1700px);
+    transform: translateY(-1000px);
   }
 
   to {
