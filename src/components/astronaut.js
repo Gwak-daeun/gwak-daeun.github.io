@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../astronaut.css'
-
+import '../astronaut2.css'
 const Astronaut = () => {
 
     const [isHidden, setIsHidden] = useState(false);
@@ -22,7 +22,7 @@ const Astronaut = () => {
 
     return(
         <>
-            <div className={!isHidden ? `astronaut` : `astronaut hide`} data-js="astro">
+            <div className={!isHidden ? `astronaut` : `astronaut hide`} >
                 
                 <div className="head"></div>
                 <div className="arm arm-left"></div>
@@ -34,7 +34,6 @@ const Astronaut = () => {
                 <div className="leg leg-right"></div>
                 <div className="schoolbag"></div>
             </div>
-       
         </>
     );
 };

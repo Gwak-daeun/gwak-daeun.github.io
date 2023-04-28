@@ -5,6 +5,7 @@ import logo from '../origin/notion_logo_icon.png';
 import myPhoto from '../origin/myPhoto.jpg';
 import share from '../origin/share_icon.png';
 import git from '../origin/git_icon.png';
+import Ground from './ground';
 
 const MyCard = () => {
 
@@ -16,19 +17,28 @@ const MyCard = () => {
         const img2 = document.querySelector("#img2");
             const projectScroll = () => {
                 if(window.scrollY > 1300){
-                    img1.className += " apply-animation";
-                    img2.className += " apply-animation";
+                    img1.classList.add("apply-animation");
+                    img2.classList.add("apply-animation");
+
+                    img1.classList.remove("del-animation");
+                    img2.classList.remove("del-animation");
+                } 
+                else if(window.scrollY < 1300){
+                    img1.classList.add("del-animation");
+                    img2.classList.add("del-animation");
+                    
+                    img1.classList.remove("apply-animation");
+                    img2.classList.remove("apply-animation");
                 }
             };
             
             window.addEventListener("scroll", projectScroll);
           
           return () => {
-            window.addEventListener("scroll", projectScroll);
+            window.removeEventListener("scroll", projectScroll);
           };
         
       }, []);
-      
 
     useEffect(() => {
       const handleScroll = () => {
@@ -75,7 +85,7 @@ const MyCard = () => {
             <Col>
                 <h2 className='self'>
                     <p>탐구하고 발전해나가는 프론트엔드 개발자 곽다은 입니다.</p>
-                    <p>자기 탐구와 타인의 피드백을 적극 수용하고 성장하는 과정을 즐깁니다.</p>
+                    <p>자기 탐구와 커뮤니케이션을 통한 타인의 피드백을 적극 수용하고 성장하는 과정을 즐깁니다.</p>
                 </h2>
 
                 <h3>
@@ -242,7 +252,7 @@ const MyCard = () => {
                                 <div className='skillBox'>CSS</div>
                                 <div className='skillBox'>ANTD</div>    
                             </Row>
-                            <p>이때까지 진행하였던 프로젝트와 본인의 정보를 간단히 소개하기 위한 포트폴리오 사이트 제작</p>
+                            <p>진행하였던 프로젝트와 본인의 정보를 간단히 소개하기 위한 포트폴리오 사이트 제작</p>
                         </div>
                         </div>
 
@@ -299,9 +309,9 @@ const MyCard = () => {
         </div>
         </div>
 
-        
+        <Ground />
         </div>
-
+        
         {/* <div class="grassland">
         <div class="pond"></div>
         </div> */}

@@ -10,6 +10,8 @@ body{
   }
   
   .scrolled {
-    background-color: #3eb6cc;
-
+    background-color: #1a6db1;
+    /* background-color: linear-gradient(#f0b968 0, #60a5dd 100%); */
   }
+
+  
