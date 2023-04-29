@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a6af225.css",
+    "main.js": "/static/js/main.1afbe451.js",
+    "static/js/787.48869eed.chunk.js": "/static/js/787.48869eed.chunk.js",
+    "static/media/myPhoto.jpg": "/static/media/myPhoto.819bb68da512331094f2.jpg",
+    "static/media/notion_logo_icon.png": "/static/media/notion_logo_icon.ad947865a697756fad65.png",
+    "index.html": "/index.html",
+    "main.3a6af225.css.map": "/static/css/main.3a6af225.css.map",
+    "main.1afbe451.js.map": "/static/js/main.1afbe451.js.map",
+    "787.48869eed.chunk.js.map": "/static/js/787.48869eed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a6af225.css",
+    "static/js/main.1afbe451.js"
+  ]
+}
