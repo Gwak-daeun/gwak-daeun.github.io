@@ -6,6 +6,7 @@ import myPhoto from '../origin/myPhoto.jpg';
 import share from '../origin/share_icon.png';
 import git from '../origin/git_icon.png';
 import Ground from './ground';
+import Moon from './moon';
 
 const MyCard = () => {
 
@@ -58,15 +59,19 @@ const MyCard = () => {
 
     return(
         <>
+        <Moon style={{zIndex: 1}} />
         <div className={`all ${isHidden ? "hidden" : ""}`}>
-            
-            <Row>
+        <div style={{zIndex: 10}} class="contain">
+        <h1 class="text">Gwak-Daeun</h1>
+        </div>
+            {/* <Row>
                 <div className='balloon typing-demo'>프론트엔드 개발자 곽다은 입니다.</div>
                 <div className='triangle'></div>
-            </Row>
+            </Row> */}
+
 		</div>
 
-        <div className="card">
+        <div style={{zIndex: 10}} className="card">
             <div className='card2'> 
             <Row>
             <img className='myPhoto' src={myPhoto} />
@@ -99,7 +104,7 @@ const MyCard = () => {
         </div>
         
   
-        <div className='aboutSkills'>
+        <div style={{zIndex: 10}} className='aboutSkills'>
         <div className='aboutSkillsTag'>
             About Skills
         </div>
@@ -145,7 +150,7 @@ const MyCard = () => {
             </Row>
  
         </div>
-        <div className='all2'>
+        <div style={{zIndex: 10}} className='all2'>
         
         <div className='projects'>
             <div>Projects</div>

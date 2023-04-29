@@ -3,6 +3,48 @@ body{
   
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+.contain {
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  width: 35rem;
+  /* left: 50%; */
+  top: 0px;
+}
+
+
+.text {
+  font-family: 'Courgette';
+  color: #fffbff;
+  animation: neon 10s infinite;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@keyframes neon {
+
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow:
+      #045377 0 0 12px,
+      #045377 0 0 24px,
+      #fffbff 0 0 36px;
+  }
+
+  40%,
+  60%,
+  75% {
+    text-shadow: none; /* this is just to make it flicker */
+  }
+}
+
 .all {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -108,7 +150,7 @@ body{
 
 .card {
     /* margin-top: 15%; */
-    margin: 150px auto;
+    margin: 200px auto;
     width: 850px;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -116,6 +158,7 @@ body{
     background-color: #FBFDFA;
     height: 500px;
     position: relative;
+    z-index: 11;
   }
 
   .myNotion{
@@ -160,6 +203,7 @@ display: flex;
 }
 
 .aboutSkills {
+  z-index: 10;
   margin-top: 150px;
   margin: auto;
   padding-bottom: 100px;

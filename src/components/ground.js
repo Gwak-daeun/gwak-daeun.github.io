@@ -4,7 +4,13 @@ const Ground = () => {
 
     return(
     <>
-        <div class="ground"></div>
+        <div class="ground">
+
+        {/* <div class="landscape">
+        <div class="water"></div>
+        </div> */}
+       
+        </div>
         <div class="sky">
         <div class="cloud variant-1"></div>
         <div class="cloud variant-2"></div>

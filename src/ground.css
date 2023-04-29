@@ -148,14 +148,35 @@ body {
   overflow-x: hidden;
 }
 
+/* .landscape {
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.water {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(blue, skyblue);
+  overflow: hidden;
+  box-shadow: inset 0 1px 4px -3px #ffffff;
+} */
+
 .sky {
-  top: 3350px;
+  top: 3335px;
   background: linear-gradient(#1a6db1 0, #d0e4f2 100%);
   /* box-shadow: 0 0 20px #d0e4f2; */
   height: 300px;
   overflow: hidden;
   position: absolute;
-  width: 1600px;
+  width: 2000px;
 }
 .sky .cloud {
   background: #ebf5fc;
@@ -170,27 +191,27 @@ body {
 .sky .cloud.variant-1 {
   top: 4%;
   transform: scale(0.2);
-  animation: clouds-in-out 16s 0s infinite linear;
+  animation: clouds-in-out 36s 0s infinite linear;
 }
 .sky .cloud.variant-2 {
   top: 47%;
   transform: scale(0.4);
-  animation: clouds-in-out 17s 2s infinite linear;
+  animation: clouds-in-out 38s 2s infinite linear;
 }
 .sky .cloud.variant-3 {
   top: 63%;
   transform: scale(0.6);
-  animation: clouds-in-out 18s 4s infinite linear;
+  animation: clouds-in-out 40s 4s infinite linear;
 }
 .sky .cloud.variant-4 {
   top: 18%;
   transform: scale(0.8);
-  animation: clouds-in-out 19s 6s infinite linear;
+  animation: clouds-in-out 42s 6s infinite linear;
 }
 .sky .cloud.variant-5 {
   top: 69%;
   transform: scale(1);
-  animation: clouds-in-out 20s 8s infinite linear;
+  animation: clouds-in-out 44s 8s infinite linear;
 }
 .sky .cloud:before, .sky .cloud:after {
   background: #ebf5fc;
