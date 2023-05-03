@@ -3,13 +3,20 @@
 .astronaut2{
     width: 220px;
     height: 280px;
-    position: fixed;
+    position: absolute;
     z-index: 100;
-    top: 70%;
+    top: 3410px;
     left: 80%;
     /* margin-right: 30%; */
     /* animation: astronaut 6s linear infinite; */
     transition: all 0.5s ease;
+  }
+
+  @media (max-width: 767px) {
+    .astronaut2 {
+      top: 3450px;
+      left: 210%;
+    }
   }
 
   .astronaut2 .hide{

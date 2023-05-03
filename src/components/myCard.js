@@ -17,20 +17,40 @@ const MyCard = () => {
         const img1 = document.querySelector("#img1");
         const img2 = document.querySelector("#img2");
             const projectScroll = () => {
-                if(window.scrollY > 1300){
-                    img1.classList.add("apply-animation");
-                    img2.classList.add("apply-animation");
-
-                    img1.classList.remove("del-animation");
-                    img2.classList.remove("del-animation");
-                } 
-                else if(window.scrollY < 1300){
-                    img1.classList.add("del-animation");
-                    img2.classList.add("del-animation");
-                    
-                    img1.classList.remove("apply-animation");
-                    img2.classList.remove("apply-animation");
+                console.log('window.scrollY', window.scrollY);
+                if(window.outerWidth <= 400){
+                    if(window.scrollY > 200 ){
+                        img1.classList.add("apply-animation");
+                        img2.classList.add("apply-animation");
+    
+                        img1.classList.remove("del-animation");
+                        img2.classList.remove("del-animation");
+                    } 
+                    else if(window.scrollY < 200){
+                        img1.classList.add("del-animation");
+                        img2.classList.add("del-animation");
+                        
+                        img1.classList.remove("apply-animation");
+                        img2.classList.remove("apply-animation");
+                    }
                 }
+                else if(window.innerWidth > 400){
+                    if(window.scrollY > 1300 ){
+                        img1.classList.add("apply-animation");
+                        img2.classList.add("apply-animation");
+    
+                        img1.classList.remove("del-animation");
+                        img2.classList.remove("del-animation");
+                    } 
+                    else if(window.scrollY < 1300){
+                        img1.classList.add("del-animation");
+                        img2.classList.add("del-animation");
+                        
+                        img1.classList.remove("apply-animation");
+                        img2.classList.remove("apply-animation");
+                    }
+                }
+                
             };
             
             window.addEventListener("scroll", projectScroll);
@@ -246,6 +266,9 @@ const MyCard = () => {
                     <a href='https://knowing-yogurt-cd2.notion.site/Portpolio1-9e7ee262d8aa42279709ba11253a1bd4' target='_blank'>
                         <img className='notion5' src={logo}/>
                     </a> 
+                    <a href='https://gwak-daeun.github.io/before-Portpoliosite/dist/index.html' target='_blank'>
+                        <img className='share2' src={share} />
+                    </a>
                     <div className='portpolio2'>
                         <h2>Portpolio1</h2>
                         

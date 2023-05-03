@@ -95,12 +95,12 @@
 
 .rainbow-preloader {
   height: 90px;
-  left: 50%;
-  margin-left: -90px;
-  margin-top: 3000px;
+  /* left: 50%;
+  margin-left: -90px; */
+  margin-top: 1900px;
   overflow: hidden;
-  position: absolute;
-  top: 59%;
+  position: relative;
+  top: 0%;
   width: 180px;
 }
 .rainbow-preloader:before, .rainbow-preloader:after {
@@ -176,8 +176,15 @@ body {
   height: 300px;
   overflow: hidden;
   position: absolute;
-  width: 2000px;
+  width: 100%;
 }
+
+@media (max-width: 767px) {
+  .sky {
+    width: 1200px;
+  }
+}
+
 .sky .cloud {
   background: #ebf5fc;
   border-radius: 200px;
@@ -236,12 +243,17 @@ body {
 
 .ground {
   background: linear-gradient(#6e9e03 0, #4f7302 100%);
-  height: 17%;
+  height: 200px;
   position: absolute;
   top: 3550px;
-  bottom: 0;
-  right: 0;
-  left: 0;
+overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .ground {
+    width: 1200px;
+  }
 }
 
 @keyframes rainbow-in-out {

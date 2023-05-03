@@ -13,11 +13,22 @@ function App() {
 	useEffect(() => {
 	  const handleScroll = () => {
 		console.log(window.scrollY);
-		// console.log(scrolled);
-		if (window.scrollY > 2200) {
-		  setScrolled(true);
-		} else {
-		  setScrolled(false);
+
+		if(window.outerWidth <= 400){
+
+			if (window.scrollY > 800) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+
+		} if(window.outerWidth > 400){
+			if (window.scrollY > 2200) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+
 		}
 	  };
 	  window.addEventListener('scroll', handleScroll);

@@ -4,19 +4,19 @@ const Astronaut2 = () => {
 
     const [isHidden, setIsHidden] = useState(false);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.pageYOffset < 2700) {
-          setIsHidden(true);
-        } else {
-          setIsHidden(false);
-        }
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     if (window.pageYOffset < '1300') {
+    //       setIsHidden(true);
+    //     } else {
+    //       setIsHidden(false);
+    //     }
+    //   };
+    //   window.addEventListener('scroll', handleScroll);
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
   
 
     return(
