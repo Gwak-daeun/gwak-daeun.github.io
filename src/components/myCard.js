@@ -102,7 +102,7 @@ const MyCard = () => {
                 <h1>Name</h1>
                 <h2 className='word'>곽다은(Gwak-Daeun)</h2>
                     <h1>Skills</h1>
-                    <h2 className='word'>React / Html / Css / Javascript / AWS / Mysql</h2>
+                    <h2 className='word'>React / Html / Css / Javascript / Node.js / AWS / Mysql</h2>
                     
                 </Col>
             </Row>
@@ -158,13 +158,12 @@ const MyCard = () => {
             
             <Row>
             <div className='box3'>
-                <h2 className='tag'>Mysql</h2>
-                Mysql로 웹 프로젝트의 데이터베이스를 관리하였습니다. row query의 문법에 익숙합니다.
+                <h2 className='tag'>Node.js</h2>
+                Sequelize, Express를 사용하여 서버를 구축하였습니다. 웹 사이트의 기본적인 틀(로그인/회원가입, 게시글, 댓글의 CRUD) 이외에도 리소스를 원하는 방향으로 생산되도록 설계할 수 있습니다.
             </div>
-            <div className='hide'>
             <div className='box3'>
-                <h2 className='tag'></h2>    
-            </div>
+            <h2 className='tag'>Mysql</h2>
+                Mysql로 웹 프로젝트의 데이터베이스를 관리하였습니다. row query의 문법에 익숙합니다.
             </div>
 
             </Row>
