@@ -147,7 +147,7 @@ const MyCard = () => {
                 <h2 className='tag'>Javascript</h2>   
                 ES6 문법을 사용합니다.
                 <br />
-                Node.js와 Sequelize를 사용해 서버를 구축하여 웹 프로젝트를 진행한 경험이 있습니다.
+                React와 Node.js 프로젝트를 제작하는데에 사용하였습니다.
             </div>
             
             <div className='box3'>
