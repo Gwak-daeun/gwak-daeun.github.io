@@ -95,7 +95,7 @@ const MyCard = () => {
             <div className='card2'> 
             <Row>
             <img className='myPhoto' src={myPhoto} />
-            <a  href='https://knowing-yogurt-cd2.notion.site/Portpolio2-1867586561a14eb4adb15727c0fefd87' target='_blank'>
+            <a  href='https://gwak-da-eun.notion.site/3dbeb300ba74486689474100d5c98971?pvs=4' target='_blank'>
                 <img className='myNotion' src={logo} />
             </a>  
                 <Col>
