@@ -177,7 +177,7 @@ const MyCard = () => {
             <div class="img-container">
                 <div id="img1">
                     <Col>
-                    <a href='https://knowing-yogurt-cd2.notion.site/Portpolio2-1867586561a14eb4adb15727c0fefd87' target='_blank'>
+                    <a href='https://gwak-da-eun.notion.site/Portpolio2-1867586561a14eb4adb15727c0fefd87?pvs=4' target='_blank'>
                         <img className='notion4' src={logo}/>
                     </a> 
                     <div className='project0'>
@@ -196,7 +196,7 @@ const MyCard = () => {
                         </div>
                     </div>
 
-                    <a href='https://knowing-yogurt-cd2.notion.site/Fourth-Project-Fashionary-593f73eb1cbf459c9d577966667ed391' target='_blank'>
+                    <a href='https://gwak-da-eun.notion.site/Fourth-Project-Fashionary-593f73eb1cbf459c9d577966667ed391?pvs=4' target='_blank'>
                         <img className='notion' src={logo}/>
                     </a> 
                     <a href='https://fashionary.site' target='_blank'>
@@ -229,7 +229,7 @@ const MyCard = () => {
                         </div>
                     </div>
 
-                    <a href='https://knowing-yogurt-cd2.notion.site/Second-Project-Beanwood-31e77fc996bc466f8f8dde0d2844ae19' target='_blank'>
+                    <a href='https://gwak-da-eun.notion.site/Second-Project-Beanwood-31e77fc996bc466f8f8dde0d2844ae19?pvs=4' target='_blank'>
                             <img className='notion1' src={logo}/>
                         </a> 
                         <a href='https://github.com/Gwak-daeun/My-Projects/tree/main/secondProject' target='_blank'>
@@ -262,7 +262,7 @@ const MyCard = () => {
                 <div id="img2">
                     <Col>
                     {/* <img  src={cat} /> */}
-                    <a href='https://knowing-yogurt-cd2.notion.site/Portpolio1-9e7ee262d8aa42279709ba11253a1bd4' target='_blank'>
+                    <a href='https://gwak-da-eun.notion.site/Portpolio1-9e7ee262d8aa42279709ba11253a1bd4?pvs=4' target='_blank'>
                         <img className='notion5' src={logo}/>
                     </a> 
                     <a href='https://gwak-daeun.github.io/before-Portpoliosite/dist/index.html' target='_blank'>
@@ -284,7 +284,7 @@ const MyCard = () => {
                         </div>
 
 
-                        <a href='https://knowing-yogurt-cd2.notion.site/Third-Project-Fit-Back-450fdf30a8704f668fabbf9b4b7a300d' target='_blank'>
+                        <a href='https://gwak-da-eun.notion.site/Third-Project-Fit-Back-450fdf30a8704f668fabbf9b4b7a300d?pvs=4' target='_blank'>
                             <img className='notion2' src={logo}/>
                         </a> 
                         <a href='https://github.com/Gwak-daeun/My-Projects/tree/main/thirdProject' target='_blank'>
@@ -308,7 +308,7 @@ const MyCard = () => {
                         </div>
                     </div>
 
-                    <a href='https://knowing-yogurt-cd2.notion.site/First-Project-Unicorn-27a65c8bf4ea49559c3bbfb3542de1b2' target='_blank'>
+                    <a href='https://gwak-da-eun.notion.site/First-Project-Unicorn-27a65c8bf4ea49559c3bbfb3542de1b2?pvs=4' target='_blank'>
                             <img className='notion3' src={logo}/>
                         </a> 
                         <a href='https://github.com/Gwak-daeun/My-Projects/tree/main/firstProject/front' target='_blank'>
