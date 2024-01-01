@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color:#000000;
+    
+  }
+
+.app{
+    height: 100%;
+    width: 100%;
+      background-color:#000000;
+    transition: background-color 0.5s ease;
+  }
+
+  @media (max-width: 767px) {
+    .app {
+      width: 200%;
+    }
+  }
+  
+  .scrolled {
+    background-color: #1a6db1;
+    /* background-color: linear-gradient(#f0b968 0, #60a5dd 100%); */
+  }
+
+  
