@@ -97,12 +97,23 @@
   height: 90px;
   /* left: 50%;
   margin-left: -90px; */
-  margin-top: 1900px;
+  margin-top: 1500px;
   overflow: hidden;
   position: relative;
   top: 0%;
   width: 180px;
 }
+
+
+@media screen and (max-width: 500px) {
+  .astronaut {
+    left: 10px; 
+    right: 20px; 
+  }
+}
+
+
+
 .rainbow-preloader:before, .rainbow-preloader:after {
   background: linear-gradient(45deg, transparent 33.333%, #6b9903 33.333%, #6b9903 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #6b9903 33.333%, #6b9903 66.667%, transparent 66.667%);
   background-size: 6px 34px;
@@ -171,12 +182,13 @@ body {
 
 .sky {
   top: 3335px;
-  background: linear-gradient(#1a6db1 0, #d0e4f2 100%);
+  background: linear-gradient(#1A6DB1 0, #d0e4f2 100%);
   /* box-shadow: 0 0 20px #d0e4f2; */
   height: 300px;
   overflow: hidden;
   position: absolute;
   width: 100%;
+  min-width: 1600px;
 }
 
 @media (max-width: 767px) {
@@ -248,6 +260,7 @@ body {
   top: 3550px;
 overflow: hidden;
   width: 100%;
+  min-width: 1600px;
 }
 
 @media (max-width: 767px) {

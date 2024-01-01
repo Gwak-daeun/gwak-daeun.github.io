@@ -175,6 +175,7 @@ body{
     height: 60px;
     width: 63px;
     filter: brightness(10%);
+    z-index: 100;
   }
 
   .myNotion:hover{
@@ -200,7 +201,7 @@ display: flex;
 }
 .card3 h3{
   text-align: center;
-  margin-top: 45px;
+  margin-top: 33px;
 }
 
 .self {
@@ -271,7 +272,7 @@ display: flex;
   .tag{
     bottom: 115px;
     right: 370px;
-    width: 20px;
+    /* width: 20px; */
     height: 20px;
     transform: translate(59.5%, 28%);
     /* padding: 0px; */
@@ -281,7 +282,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 125px;
+    width: 145px;
     height: 50px;
     border-radius: 3px;
     border: 2px solid #FBFDFA;
@@ -307,7 +308,7 @@ display: flex;
     padding: 10px;
     border: 2px solid #FBFDFA;
     height: 100px;
-    width: 400px;
+    width: 408px;
     margin-top: 95px;
     margin-left: 60px;
     border-top: 10%;
@@ -380,7 +381,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 276px;
     padding: 0 50px 0 50px;
     border: 2px solid #B7CCEB;
     border-radius: 10px;
@@ -423,7 +424,7 @@ display: flex;
 
   .notion {
     position: absolute;
-    margin: 145px 0px 0 110px;
+    margin: 245px 0px 0 10px;
     width: 50px;
     height: 50px;
     
@@ -435,7 +436,7 @@ display: flex;
 
   .share{
     position: absolute;
-    margin: 145px 0px 0 60px;
+    margin: 255px 0px 0 203px;
     width: 50px;
     height: 50px;
   }
@@ -444,9 +445,20 @@ display: flex;
     filter: brightness(50%);
   }
 
+  .firstGit{
+    position: absolute;
+    margin: 0px 0px 0 65px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .firstGit:hover {
+    filter: brightness(50%);
+  }
+
   .git{
     position: absolute;
-    margin: 145px 0px 0 10px;
+    margin: 245px 0px 0 65px;
     width: 45px;
     height: 45px;
   }

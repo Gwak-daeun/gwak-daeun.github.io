@@ -18,6 +18,13 @@
     opacity: 0;
   }
 
+  @media screen and (max-width: 500px) {
+    .astronaut {
+      left: 200px; 
+      right: 20px; 
+    }
+  }
+
   @keyframes astronaut{
     0%{
       transform: rotate(0deg);

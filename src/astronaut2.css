@@ -12,10 +12,10 @@
     transition: all 0.5s ease;
   }
 
-  @media (max-width: 767px) {
-    .astronaut2 {
-      top: 3450px;
-      left: 210%;
+  @media screen and (max-width: 500px) {
+    .astronaut {
+      left: 200px; 
+      right: 20px; 
     }
   }
 
