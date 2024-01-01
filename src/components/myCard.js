@@ -139,7 +139,8 @@ const MyCard = () => {
 
                     <div className='box3'>
                         <h2 className='tag'>Java</h2>
-                        객체 지향 프로그래밍 (OOP)의 원리를 이해하며 Java로 OOP 개념을 구현할 수 있습니다.
+                        객체 지향 프로그래밍(OOP)의 원리를 이해하며 Java로 OOP 개념을 구현할 수 있습니다.
+                        <br />
                         IntelliJ와 같은 통합 개발 환경을 통해 Java 언어로 개발한 경력이 있습니다.
                     </div>
                 </Row>
@@ -192,6 +193,16 @@ const MyCard = () => {
 
                 </Row>
 
+                <Row>
+
+                    <div className='box3'>
+                        <h2 className='tag'>Redis</h2>
+                         Redis의 Set과 Expire를 활용하여 Jwt, 휴대폰 인증번호를 관리하였습니다.
+                         NoSql의 특성을 파악하고 있습니다.
+                    </div>
+
+                </Row>
+
             </div>
             <div style={{ zIndex: 10 }} className='all2'>
 
@@ -203,7 +214,7 @@ const MyCard = () => {
                                 <Col>
 
 
-                                <a href='https://gwak-da-eun.notion.site/FarmParm-Team-fe22ac0f99334a6397e7d81b62bef9e4?pvs=4' target='_blank'>
+                                    <a href='https://gwak-da-eun.notion.site/FarmParm-Team-fe22ac0f99334a6397e7d81b62bef9e4?pvs=4' target='_blank'>
                                         <img className='notion4' src={logo} />
                                     </a>
                                     <a href='https://github.com/KiWiKiWi-Bird/FarmPam_Backend' target='_blank'>
